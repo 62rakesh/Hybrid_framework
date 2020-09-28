@@ -8,7 +8,7 @@ import string
 import random
 
 
-@pytest.mark.sanity
+# @pytest.mark.sanity
 @pytest.mark.regression
 class Test_002_Addcustomer:
     base_url = Readconfig.getApplicationURL()

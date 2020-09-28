@@ -1,4 +1,5 @@
 import pytest
+import time
 import logging
 from selenium import webdriver
 from pageObjects.Loginpage import Login
@@ -31,6 +32,7 @@ class Test_001_Login:
         self.lp.setUsername(self.username)
         self.lp.setPassword(self.password)
         self.lp.clickLogin()
+        time.sleep(2)
         act_title = self.driver.title
         print(act_title)
         self.lp.clickLogout()

@@ -75,7 +75,6 @@ class Addcustomer():
             self.listitem = self.driver.find_element_by_xpath(self.customer_administrator_xpath)
 
         elif role == "Guests":
-            time.sleep(3)
             self.driver.find_element_by_xpath(self.customer_remove_roles_xpath).click()
             self.listitem = self.driver.find_element_by_xpath(self.customer_guests_xpath)
 

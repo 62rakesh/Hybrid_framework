@@ -58,6 +58,7 @@ class Test_002_Addcustomer:
         self.add_customer.clickonSave()
         self.driver.close()
         print("Customer is added successfully")
+        #commenting file
 
 
 def random_generator(size=8, chars=string.ascii_lowercase + string.digits):
